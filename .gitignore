@@ -1,0 +1,38 @@
+# Python bytecode:
+*.py[co]
+
+# Packaging files:
+*.egg*
+
+# Editor temp files:
+*.swp
+*~
+
+# Sphinx docs:
+build
+
+# SQLite3 database files:
+*.db
+
+# Logs:
+*.log
+
+# PyCharm files
+.idea
+.idea/*
+
+
+# Vagrant
+.vagrant
+.vagrant/*
+Vagrantfile
+
+
+*.pot
+__pycache__
+MANIFEST
+dist/
+docs/_build/
+docs/locale/
+tests/coverage_html/
+tests/.coverage
