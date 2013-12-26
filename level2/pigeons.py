@@ -18,11 +18,9 @@ def checkio(number):
         new_portion = portion + new_pigeons
         if new_portion <= number:
             portion = new_portion
-            number -= new_portion
         else:
             portion += number - portion
-            number = 0
-
+        number -= new_portion
     return portion
 
 #These "asserts" using only for self-checking and not necessary for auto-testing
