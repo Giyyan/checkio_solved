@@ -10,12 +10,15 @@ Input: A text for analysis. A string (Unicode).
 
 Output: The most frequent letter. A string.
 """
+from collections import Counter
 
 
 def checkio(text):
-
-    #replace this for solution
-    return 'a'
+    text.lower()
+    text.strip('(').strip(')').strip(',').strip('.').strip('!').strip('?')
+    c = Counter(text)
+    c.most_common(1)
+    return c.most_common(1)[0][0]
 
 #These "asserts" using only for self-checking and not necessary for auto-testing
 if __name__ == '__main__':
